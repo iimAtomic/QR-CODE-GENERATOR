@@ -1,8 +1,8 @@
 const container = document.getElementById('container');
 const image = document.getElementById('image');
 const input = document.getElementById('text');
-const generateButton = container.getElementById('button1');
-const downloadButton = container.getElementById('button2');
+const generateButton = container.querySelector('button:nth-of-type(1)');
+const downloadButton = container.querySelector('button:nth-of-type(2)');
 
 generateButton.addEventListener('click', () => {
   const url = input.value;
