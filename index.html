@@ -9,13 +9,25 @@
 </head>
 <body>
     <div id="container">
+    
         <img id="image" src="background.jpg">
-        <input id="text" type="text">
+        <input id="text" type="text" placeholder="Lien">
+    
+     
         <div id="control">
         <button id="button1"> Generate </button>
-        <button id="button2"> Download </button></div>
+        <button id="button2"> Download </button>
+        </div>
     </div>
+
+    <div id="scan">
+    <button id="button3">Scanner</button>
+
+    <video style="display:none;" id="video" width="100%" height="auto"></video>
+     <div id="result"></div>
+</div>
+    <script src="https://unpkg.com/@zxing/library@0.18.4"></script>
+     <script src="index.js"> </script> 
+        
 </body>
- <script src="index.js">
- </script>
 </html>

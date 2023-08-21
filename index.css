@@ -1,11 +1,33 @@
 body{
-    background-color: #292525
+    background-color: #292525;
+        display: flex;
+        flex-direction: row ;
+        align-items: center;
+        justify-content: center;
+}
+
+@media (max-width: 900px) {
+    body{
+        min-width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #b16105;
+    }
+}
+
+
+#scan{
+    width: 600px;
+    height:480px;
+    margin-top: 35px;
 }
 
 #container{
     margin: auto;
-    width: 500px;
-    height:280px;
+    width: 600px;
+    height:480px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,17 +36,42 @@ body{
 }
 
 #text{
+    margin-top:10px;
     border: 2px solid #05F7FF;
     border-radius: 5px;
     padding:3px;
     outline: none;
-    width: 190px;
+    width: 250px;
 }
 
+
+
+#text2{
+
+    margin-top:10px;
+    border: 2px solid #05F7FF;
+    border-radius: 5px;
+    padding:3px;
+    outline: none;
+    width: 250px;
+}
+
+
+#text3{
+    margin-top:10px;
+    border: 2px solid #05F7FF;
+    border-radius: 5px;
+    padding:3px;
+    outline: none;
+    width: 250px;
+}
+
+
 #image{
-    width:180px;
-    height:160px;
+    width:250px;
+    height:220px;
     border: 10px solid #05F7FF;
+    margin-bottom: 15px;
    
 }
 
@@ -32,16 +79,18 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 200px;
+    width: 320px;
+    margin-top: 20px;
 }
 
 button{
-    font-size:20px ;
+    font-size:30px ;
     border: none;
     background-color: #b16105;
     color: white;
     font-family: Arial, serif;
     border-radius: 7px;
+    Margin-top: 5px;
 }
 
 button:active {
